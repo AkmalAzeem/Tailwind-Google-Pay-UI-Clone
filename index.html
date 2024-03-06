@@ -1,12 +1,289 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css" />
     <title>GPay UI</title>
   </head>
-  <body>
-    
+  <body class="bg-zinc-900 max-w-lg mx-auto">
+    <div class="bg-zinc-800">
+      <!-- Top Header -->
+      <div class="flex items-center px-5 py-3 space-x-5">
+        <div class="relative flex-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="absolute top-2 left-3 text-gray-300 fill-current"
+          >
+            <path
+              fill="#888888"
+              d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5q0-1.875-1.312-3.187T9.5 5Q7.625 5 6.313 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14"
+            />
+          </svg>
+          <input
+            class="w-full pl-11 pr-4 px-4 py-2 text-gray-200 bg-zinc-700 outline-none rounded-full"
+            type="text"
+            placeholder="Pay friends and merchants"
+          />
+        </div>
+        <img
+          class="w-10 h-10 rounded-full"
+          src="./public/images/Profile_pic_1.jpg"
+          alt="Akmal Azeem"
+        />
+      </div>
+
+      <!-- Banner -->
+      <img src="./public/images/gpay-banner.webp" alt="" />
+
+      <!-- Icons -->
+      <section
+        class="px-10 py-5 grid grid-cols-4 gap-7 text-xs text-center font-medium"
+      >
+        <!-- scan QR -->
+        <div class="flex flex-col items-center justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="text-white fill-current"
+          >
+            <path
+              d="M3 7q-.425 0-.712-.288T2 6V3q0-.425.288-.712T3 2h3q.425 0 .713.288T7 3q0 .425-.288.713T6 4H4v2q0 .425-.288.713T3 7m0 15q-.425 0-.712-.288T2 21v-3q0-.425.288-.712T3 17q.425 0 .713.288T4 18v2h2q.425 0 .713.288T7 21q0 .425-.288.713T6 22zm15 0q-.425 0-.712-.288T17 21q0-.425.288-.712T18 20h2v-2q0-.425.288-.712T21 17q.425 0 .713.288T22 18v3q0 .425-.288.713T21 22zm3-15q-.425 0-.712-.288T20 6V4h-2q-.425 0-.712-.288T17 3q0-.425.288-.712T18 2h3q.425 0 .713.288T22 3v3q0 .425-.288.713T21 7m-3.5 12v-1.5H19V19zm0-3v-1.5H19V16zM16 17.5V16h1.5v1.5zM14.5 19v-1.5H16V19zM13 17.5V16h1.5v1.5zm3-3V13h1.5v1.5zM14.5 16v-1.5H16V16zM13 14.5V13h1.5v1.5zm1-3.5q-.425 0-.712-.288T13 10V6q0-.425.288-.712T14 5h4q.425 0 .713.288T19 6v4q0 .425-.288.713T18 11zm-8 8q-.425 0-.712-.288T5 18v-4q0-.425.288-.712T6 13h4q.425 0 .713.288T11 14v4q0 .425-.288.713T10 19zm0-8q-.425 0-.712-.288T5 10V6q0-.425.288-.712T6 5h4q.425 0 .713.288T11 6v4q0 .425-.288.713T10 11zm.5 6.5h3v-3h-3zm0-8h3v-3h-3zm8 0h3v-3h-3z"
+            />
+          </svg>
+          <span class="text-slate-300 mt-2"
+            >Scan any <br />
+            QR code</span
+          >
+        </div>
+        <!-- Pay Contacts -->
+        <div class="flex flex-col items-center justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="text-white fill-current"
+          >
+            <path
+              d="M3 7q-.425 0-.712-.288T2 6V3q0-.425.288-.712T3 2h3q.425 0 .713.288T7 3q0 .425-.288.713T6 4H4v2q0 .425-.288.713T3 7m0 15q-.425 0-.712-.288T2 21v-3q0-.425.288-.712T3 17q.425 0 .713.288T4 18v2h2q.425 0 .713.288T7 21q0 .425-.288.713T6 22zm15 0q-.425 0-.712-.288T17 21q0-.425.288-.712T18 20h2v-2q0-.425.288-.712T21 17q.425 0 .713.288T22 18v3q0 .425-.288.713T21 22zm3-15q-.425 0-.712-.288T20 6V4h-2q-.425 0-.712-.288T17 3q0-.425.288-.712T18 2h3q.425 0 .713.288T22 3v3q0 .425-.288.713T21 7m-3.5 12v-1.5H19V19zm0-3v-1.5H19V16zM16 17.5V16h1.5v1.5zM14.5 19v-1.5H16V19zM13 17.5V16h1.5v1.5zm3-3V13h1.5v1.5zM14.5 16v-1.5H16V16zM13 14.5V13h1.5v1.5zm1-3.5q-.425 0-.712-.288T13 10V6q0-.425.288-.712T14 5h4q.425 0 .713.288T19 6v4q0 .425-.288.713T18 11zm-8 8q-.425 0-.712-.288T5 18v-4q0-.425.288-.712T6 13h4q.425 0 .713.288T11 14v4q0 .425-.288.713T10 19zm0-8q-.425 0-.712-.288T5 10V6q0-.425.288-.712T6 5h4q.425 0 .713.288T11 6v4q0 .425-.288.713T10 11zm.5 6.5h3v-3h-3zm0-8h3v-3h-3zm8 0h3v-3h-3z"
+            />
+          </svg>
+          <span class="text-slate-300 mt-2"
+            >Pay <br />
+            contacts</span
+          >
+        </div>
+        <!-- pay phone number -->
+        <div class="flex flex-col items-center justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="text-white fill-current"
+          >
+            <path
+              d="M3 7q-.425 0-.712-.288T2 6V3q0-.425.288-.712T3 2h3q.425 0 .713.288T7 3q0 .425-.288.713T6 4H4v2q0 .425-.288.713T3 7m0 15q-.425 0-.712-.288T2 21v-3q0-.425.288-.712T3 17q.425 0 .713.288T4 18v2h2q.425 0 .713.288T7 21q0 .425-.288.713T6 22zm15 0q-.425 0-.712-.288T17 21q0-.425.288-.712T18 20h2v-2q0-.425.288-.712T21 17q.425 0 .713.288T22 18v3q0 .425-.288.713T21 22zm3-15q-.425 0-.712-.288T20 6V4h-2q-.425 0-.712-.288T17 3q0-.425.288-.712T18 2h3q.425 0 .713.288T22 3v3q0 .425-.288.713T21 7m-3.5 12v-1.5H19V19zm0-3v-1.5H19V16zM16 17.5V16h1.5v1.5zM14.5 19v-1.5H16V19zM13 17.5V16h1.5v1.5zm3-3V13h1.5v1.5zM14.5 16v-1.5H16V16zM13 14.5V13h1.5v1.5zm1-3.5q-.425 0-.712-.288T13 10V6q0-.425.288-.712T14 5h4q.425 0 .713.288T19 6v4q0 .425-.288.713T18 11zm-8 8q-.425 0-.712-.288T5 18v-4q0-.425.288-.712T6 13h4q.425 0 .713.288T11 14v4q0 .425-.288.713T10 19zm0-8q-.425 0-.712-.288T5 10V6q0-.425.288-.712T6 5h4q.425 0 .713.288T11 6v4q0 .425-.288.713T10 11zm.5 6.5h3v-3h-3zm0-8h3v-3h-3zm8 0h3v-3h-3z"
+            />
+          </svg>
+          <span class="text-slate-300 mt-2"
+            >Pay phone <br />
+            number</span
+          >
+        </div>
+        <!-- Bank Transfer -->
+        <div class="flex flex-col items-center justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="text-white fill-current"
+          >
+            <path
+              d="M3 7q-.425 0-.712-.288T2 6V3q0-.425.288-.712T3 2h3q.425 0 .713.288T7 3q0 .425-.288.713T6 4H4v2q0 .425-.288.713T3 7m0 15q-.425 0-.712-.288T2 21v-3q0-.425.288-.712T3 17q.425 0 .713.288T4 18v2h2q.425 0 .713.288T7 21q0 .425-.288.713T6 22zm15 0q-.425 0-.712-.288T17 21q0-.425.288-.712T18 20h2v-2q0-.425.288-.712T21 17q.425 0 .713.288T22 18v3q0 .425-.288.713T21 22zm3-15q-.425 0-.712-.288T20 6V4h-2q-.425 0-.712-.288T17 3q0-.425.288-.712T18 2h3q.425 0 .713.288T22 3v3q0 .425-.288.713T21 7m-3.5 12v-1.5H19V19zm0-3v-1.5H19V16zM16 17.5V16h1.5v1.5zM14.5 19v-1.5H16V19zM13 17.5V16h1.5v1.5zm3-3V13h1.5v1.5zM14.5 16v-1.5H16V16zM13 14.5V13h1.5v1.5zm1-3.5q-.425 0-.712-.288T13 10V6q0-.425.288-.712T14 5h4q.425 0 .713.288T19 6v4q0 .425-.288.713T18 11zm-8 8q-.425 0-.712-.288T5 18v-4q0-.425.288-.712T6 13h4q.425 0 .713.288T11 14v4q0 .425-.288.713T10 19zm0-8q-.425 0-.712-.288T5 10V6q0-.425.288-.712T6 5h4q.425 0 .713.288T11 6v4q0 .425-.288.713T10 11zm.5 6.5h3v-3h-3zm0-8h3v-3h-3zm8 0h3v-3h-3z"
+            />
+          </svg>
+          <span class="text-slate-300 mt-2"
+            >Bank <br />
+            transfer</span
+          >
+        </div>
+
+        <!-- Pay UPI ID or number -->
+        <div class="flex flex-col items-center justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="text-white fill-current"
+          >
+            <path
+              d="M3 7q-.425 0-.712-.288T2 6V3q0-.425.288-.712T3 2h3q.425 0 .713.288T7 3q0 .425-.288.713T6 4H4v2q0 .425-.288.713T3 7m0 15q-.425 0-.712-.288T2 21v-3q0-.425.288-.712T3 17q.425 0 .713.288T4 18v2h2q.425 0 .713.288T7 21q0 .425-.288.713T6 22zm15 0q-.425 0-.712-.288T17 21q0-.425.288-.712T18 20h2v-2q0-.425.288-.712T21 17q.425 0 .713.288T22 18v3q0 .425-.288.713T21 22zm3-15q-.425 0-.712-.288T20 6V4h-2q-.425 0-.712-.288T17 3q0-.425.288-.712T18 2h3q.425 0 .713.288T22 3v3q0 .425-.288.713T21 7m-3.5 12v-1.5H19V19zm0-3v-1.5H19V16zM16 17.5V16h1.5v1.5zM14.5 19v-1.5H16V19zM13 17.5V16h1.5v1.5zm3-3V13h1.5v1.5zM14.5 16v-1.5H16V16zM13 14.5V13h1.5v1.5zm1-3.5q-.425 0-.712-.288T13 10V6q0-.425.288-.712T14 5h4q.425 0 .713.288T19 6v4q0 .425-.288.713T18 11zm-8 8q-.425 0-.712-.288T5 18v-4q0-.425.288-.712T6 13h4q.425 0 .713.288T11 14v4q0 .425-.288.713T10 19zm0-8q-.425 0-.712-.288T5 10V6q0-.425.288-.712T6 5h4q.425 0 .713.288T11 6v4q0 .425-.288.713T10 11zm.5 6.5h3v-3h-3zm0-8h3v-3h-3zm8 0h3v-3h-3z"
+            />
+          </svg>
+          <span class="text-slate-300 mt-2"
+            >Pay UPI ID <br />
+            or number</span
+          >
+        </div>
+        <!-- Self transfer -->
+        <div class="flex flex-col items-center justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="text-white fill-current"
+          >
+            <path
+              d="M3 7q-.425 0-.712-.288T2 6V3q0-.425.288-.712T3 2h3q.425 0 .713.288T7 3q0 .425-.288.713T6 4H4v2q0 .425-.288.713T3 7m0 15q-.425 0-.712-.288T2 21v-3q0-.425.288-.712T3 17q.425 0 .713.288T4 18v2h2q.425 0 .713.288T7 21q0 .425-.288.713T6 22zm15 0q-.425 0-.712-.288T17 21q0-.425.288-.712T18 20h2v-2q0-.425.288-.712T21 17q.425 0 .713.288T22 18v3q0 .425-.288.713T21 22zm3-15q-.425 0-.712-.288T20 6V4h-2q-.425 0-.712-.288T17 3q0-.425.288-.712T18 2h3q.425 0 .713.288T22 3v3q0 .425-.288.713T21 7m-3.5 12v-1.5H19V19zm0-3v-1.5H19V16zM16 17.5V16h1.5v1.5zM14.5 19v-1.5H16V19zM13 17.5V16h1.5v1.5zm3-3V13h1.5v1.5zM14.5 16v-1.5H16V16zM13 14.5V13h1.5v1.5zm1-3.5q-.425 0-.712-.288T13 10V6q0-.425.288-.712T14 5h4q.425 0 .713.288T19 6v4q0 .425-.288.713T18 11zm-8 8q-.425 0-.712-.288T5 18v-4q0-.425.288-.712T6 13h4q.425 0 .713.288T11 14v4q0 .425-.288.713T10 19zm0-8q-.425 0-.712-.288T5 10V6q0-.425.288-.712T6 5h4q.425 0 .713.288T11 6v4q0 .425-.288.713T10 11zm.5 6.5h3v-3h-3zm0-8h3v-3h-3zm8 0h3v-3h-3z"
+            />
+          </svg>
+          <span class="text-slate-300 mt-2"
+            >Self <br />
+            transfer</span
+          >
+        </div>
+        <!-- Pay bills -->
+        <div class="flex flex-col items-center justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="text-white fill-current"
+          >
+            <path
+              d="M3 7q-.425 0-.712-.288T2 6V3q0-.425.288-.712T3 2h3q.425 0 .713.288T7 3q0 .425-.288.713T6 4H4v2q0 .425-.288.713T3 7m0 15q-.425 0-.712-.288T2 21v-3q0-.425.288-.712T3 17q.425 0 .713.288T4 18v2h2q.425 0 .713.288T7 21q0 .425-.288.713T6 22zm15 0q-.425 0-.712-.288T17 21q0-.425.288-.712T18 20h2v-2q0-.425.288-.712T21 17q.425 0 .713.288T22 18v3q0 .425-.288.713T21 22zm3-15q-.425 0-.712-.288T20 6V4h-2q-.425 0-.712-.288T17 3q0-.425.288-.712T18 2h3q.425 0 .713.288T22 3v3q0 .425-.288.713T21 7m-3.5 12v-1.5H19V19zm0-3v-1.5H19V16zM16 17.5V16h1.5v1.5zM14.5 19v-1.5H16V19zM13 17.5V16h1.5v1.5zm3-3V13h1.5v1.5zM14.5 16v-1.5H16V16zM13 14.5V13h1.5v1.5zm1-3.5q-.425 0-.712-.288T13 10V6q0-.425.288-.712T14 5h4q.425 0 .713.288T19 6v4q0 .425-.288.713T18 11zm-8 8q-.425 0-.712-.288T5 18v-4q0-.425.288-.712T6 13h4q.425 0 .713.288T11 14v4q0 .425-.288.713T10 19zm0-8q-.425 0-.712-.288T5 10V6q0-.425.288-.712T6 5h4q.425 0 .713.288T11 6v4q0 .425-.288.713T10 11zm.5 6.5h3v-3h-3zm0-8h3v-3h-3zm8 0h3v-3h-3z"
+            />
+          </svg>
+          <span class="text-slate-300 mt-2"
+            >Pay <br />
+            bills</span
+          >
+        </div>
+        <!-- Mobile recharge -->
+        <div class="flex flex-col items-center justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            class="text-white fill-current"
+          >
+            <path
+              d="M3 7q-.425 0-.712-.288T2 6V3q0-.425.288-.712T3 2h3q.425 0 .713.288T7 3q0 .425-.288.713T6 4H4v2q0 .425-.288.713T3 7m0 15q-.425 0-.712-.288T2 21v-3q0-.425.288-.712T3 17q.425 0 .713.288T4 18v2h2q.425 0 .713.288T7 21q0 .425-.288.713T6 22zm15 0q-.425 0-.712-.288T17 21q0-.425.288-.712T18 20h2v-2q0-.425.288-.712T21 17q.425 0 .713.288T22 18v3q0 .425-.288.713T21 22zm3-15q-.425 0-.712-.288T20 6V4h-2q-.425 0-.712-.288T17 3q0-.425.288-.712T18 2h3q.425 0 .713.288T22 3v3q0 .425-.288.713T21 7m-3.5 12v-1.5H19V19zm0-3v-1.5H19V16zM16 17.5V16h1.5v1.5zM14.5 19v-1.5H16V19zM13 17.5V16h1.5v1.5zm3-3V13h1.5v1.5zM14.5 16v-1.5H16V16zM13 14.5V13h1.5v1.5zm1-3.5q-.425 0-.712-.288T13 10V6q0-.425.288-.712T14 5h4q.425 0 .713.288T19 6v4q0 .425-.288.713T18 11zm-8 8q-.425 0-.712-.288T5 18v-4q0-.425.288-.712T6 13h4q.425 0 .713.288T11 14v4q0 .425-.288.713T10 19zm0-8q-.425 0-.712-.288T5 10V6q0-.425.288-.712T6 5h4q.425 0 .713.288T11 6v4q0 .425-.288.713T10 11zm.5 6.5h3v-3h-3zm0-8h3v-3h-3zm8 0h3v-3h-3z"
+            />
+          </svg>
+          <span class="text-slate-300 mt-2"
+            >Mobile <br />
+            recharge</span
+          >
+        </div>
+      </section>
+
+      <!-- quick balance -->
+      <section class="text-sm flex items-center justify-center py-5 space-x-4">
+        <div class="px-4 py-1 rounded-full bg-zinc-700 text-zinc-400">
+          UPI Lite balance: Rs.6
+        </div>
+        <div class="px-4 py-1 rounded-full bg-zinc-700 text-zinc-400">
+          UPI ID: akmalazeem@gmail.com
+        </div>
+      </section>
+
+      <!-- People list -->
+      <section class="py-5 px-10">
+        <h2 class="text-xl text-zinc-200 pb-4">People</h2>
+        <div class="text-zinc-300 text-sm grid grid-cols-4 gap-5">
+          <!-- row 1 -->
+          <div class="flex flex-col items-center justify-center">
+            <img
+              class="rounded-full mb-1 w-12"
+              src="https://ui-avatars.com/api/?name=AntoPrab&background=random"
+              alt="Anto Prabha"
+            />
+            <span>AntoPrab...</span>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img
+              class="rounded-full mb-1 w-12"
+              src="https://ui-avatars.com/api/?name=Selvakumar&background=random"
+              alt="Selvakumar"
+            />
+            <span>Selvakumar</span>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img
+              class="rounded-full mb-1 w-12"
+              src="https://ui-avatars.com/api/?name=Keerthana&background=random"
+              alt="Keerthana"
+            />
+            <span>Keerthana</span>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img
+              class="rounded-full mb-1 w-12"
+              src="https://ui-avatars.com/api/?name=Amala&background=random"
+              alt="Amala"
+            />
+            <span>Amala</span>
+          </div>
+          <!-- row 2 -->
+          <div class="flex flex-col items-center justify-center">
+            <img
+              class="rounded-full mb-1 w-12"
+              src="https://ui-avatars.com/api/?name=Abhishek&background=random"
+              alt="Abhishek"
+            />
+            <span>Abhishek</span>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img
+              class="rounded-full mb-1 w-12"
+              src="https://ui-avatars.com/api/?name=Arul&background=random"
+              alt="Arul"
+            />
+            <span>Arul</span>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <img
+              class="rounded-full mb-1 w-12"
+              src="https://ui-avatars.com/api/?name=Malar&background=random"
+              alt="Malar"
+            />
+            <span>Malar</span>
+          </div>
+          <div class="flex flex-col items-center justify-center">
+            <div class="p-2 border rounded-full border-zinc-500 mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 512 512"
+                class=""
+              >
+                <path
+                  fill="none"
+                  stroke="#888888"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="48"
+                  d="m112 184l144 144l144-144"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
